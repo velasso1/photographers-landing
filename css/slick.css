@@ -1,0 +1,87 @@
+@charset "UTF-8";
+.slider {
+  min-width: 0;
+  position: relative;
+  padding: 0 60px;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10px;
+  font-size: 0px;
+  margin-top: -30px;
+  width: 30px;
+  height: 50px;
+}
+.slider .slick-prev {
+  left: 0;
+  background: url("../img/left-arrow.png") 0 0/100% no-repeat;
+}
+.slider .slick-next {
+  right: 0;
+  background: url("../img/right-arrow.png") 0 0/100% no-repeat;
+}
+.slider .slider_item {
+  text-align: center;
+}
+
+/* Слайдер */
+.slick-slide {
+  margin-right: 110px;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+@media screen and (max-width: 1200px) {
+  .slider .slick-next {
+    margin-right: 30px;
+  }
+  .slider .slick-prev {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slick-slide {
+    padding: 0 100px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-slide {
+    padding: 0 80px;
+    margin-right: 170px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .slick-arrow {
+    display: none;
+  }
+}

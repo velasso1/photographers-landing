@@ -1,0 +1,121 @@
+.slider {
+    min-width: 0;
+    position: relative;
+    padding: 0 60px;
+
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10px;
+        font-size: 0px;
+        margin-top: -30px;
+        width: 30px;
+        height: 50px;
+
+        
+    }
+
+    .slick-prev {
+        left: 0;
+        background: url("../img/left-arrow.png") 0 0 / 100% no-repeat;
+    }
+
+    .slick-next {
+        right: 0;
+        background: url("../img/right-arrow.png") 0 0 / 100% no-repeat;
+    }
+
+    .slider_item {
+        text-align: center;
+    }
+    
+}
+
+/* Слайдер */
+.slick-slider{
+}
+
+.slick-slide {
+    // padding-left: 55px;
+    margin-right: 110px;
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{
+}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+    opacity: 0.2;
+}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+@media screen and (max-width: 1200px) {
+
+    .slider {
+
+        .slick-next {
+            margin-right: 30px;
+        }
+
+        .slick-prev {
+            margin-left: 30px;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .slick-slide {
+        padding: 0 100px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slick-slide {
+        padding: 0 80px;
+        margin-right: 170px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .slick-arrow {
+        display: none;
+    }
+}
+
